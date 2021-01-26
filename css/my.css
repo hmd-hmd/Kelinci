@@ -152,3 +152,36 @@
 .buy-item button{
     width: 100%;
 }
+.payment{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.4);
+    display:none;
+}
+.x-overlay{
+    display: flex;
+    padding-top: 350px;
+    height: 100%;
+    text-align: center;
+
+}
+.payment-method div{
+    display: inline-block;
+    width: 100%;
+}
+.payment-method a{
+    text-decoration: none;
+    margin-right: 5% !important;
+    margin-left: 5% !important;
+}
+.payment-method div img{
+    max-height: 50px;
+    margin-top: 20px !important;
+}
+#paySuccess{
+    display:none;
+}
