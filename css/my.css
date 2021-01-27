@@ -43,8 +43,8 @@
 }
 
 iframe {
-    height: 265px;
-    width: 450px;
+    height: 250px;
+    width: 400px;
 
 }
 
@@ -120,7 +120,6 @@ iframe {
     background-color: rgba(9, 177, 186, .25);
     opacity: 0;
     transition: 0.4;
-    s;
 }
 
 .item-preview:hover span {
