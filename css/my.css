@@ -1,25 +1,31 @@
 .font-odibee {
     font-family: 'Odibee Sans', cursive;
 }
+
 .cyan,
 .cyan-hover:hover {
     background-color: #09b1ba
 }
+
 .nav-wrapper a {
     color: #37474f !important;
 }
-.nav-wrapper ul li:hover{
+
+.nav-wrapper ul li:hover {
     position: relative;
 }
-.btn.cyan.darken-3:hover{
+
+.btn.cyan.darken-3:hover {
     color: white !important;
     background-color: #09b1ba !important;
 }
-.nav-wrapper ul li:hover a{
+
+.nav-wrapper ul li:hover a {
     color: white !important;
     font-weight: bold !important
 }
-.nav-wrapper ul li:hover::before{
+
+.nav-wrapper ul li:hover::before {
     content: '';
     position: absolute;
     background-color: #09b1b0;
@@ -31,25 +37,55 @@
     z-index: -1;
     border-radius: 18px;
 }
-.banner{
+
+.nav-wrapper ul li.lit:hover::before {
+    display: none;
+}
+
+iframe {
+    height: 265px;
+    width: 450px;
+
+}
+
+@media (min-width:750px) {
+    iframe {
+        height: 420px;
+        width: 746px;
+        ;
+    }
+}
+
+@media (min-width:1130px) {
+    iframe {
+        height: 630px;
+        width: 1120px;
+    }
+}
+
+
+.banner {
     position: relative;
     width: 100%;
 }
-.banner img{
+
+.banner img {
     max-height: 80%;
 }
-.banner-left{
-    
+
+.banner-left {
+
     width: 100%;
     margin-left: -20px;
 }
-.banner-right{
+
+.banner-right {
     position: absolute;
     top: 0;
     right: 0;
 }
 
-.title-first h3{
+.title-first h3 {
     margin-top: -40px !important;
     margin: 0;
 }
@@ -61,35 +97,42 @@
 }
 
 .item-title,
-.item-title:hover{
+.item-title:hover {
     text-decoration: none;
 }
-.item-title:hover h6{
-    color:#09b1ba;
+
+.item-title:hover h6 {
+    color: #09b1ba;
 }
-.item-preview{
+
+.item-preview {
     overflow: hidden;
     position: relative;
 }
-.item-preview span{
+
+.item-preview span {
     display: block;
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(9,177,186,.25);
+    background-color: rgba(9, 177, 186, .25);
     opacity: 0;
-    transition: 0.4;s;
+    transition: 0.4;
+    s;
 }
-.item-preview:hover span{
+
+.item-preview:hover span {
     opacity: 1;
 }
+
 .item-price {
     font-weight: bold;
 }
 
-.item-details h6, .item-avaibility {
+.item-details h6,
+.item-avaibility {
     font-family: 'Anton', sans-serif;
     letter-spacing: 0.6px;
 }
@@ -119,40 +162,47 @@
     float: left;
     margin-bottom: 10px;
 }
-.footer-payment-icons{
+
+.footer-payment-icons {
     float: right;
 }
-.footer-payment-icons img{
+
+.footer-payment-icons img {
     height: 32px;
     margin-inline: 5px;
 }
 
 
 /* Halaman Rincian */
-.item-i li{
+.item-i li {
     margin-left: 10px !important;
     padding-bottom: 20px !important;
     box-sizing: border-box;
 }
+
 .item-info .x-right,
 .item-info .x-center,
 .item-info .x-left {
     display: table-cell;
     text-align: left;
 }
-.item-info .x-left{
+
+.item-info .x-left {
     min-width: 100px;
     width: 180px;
 }
-.item-info .x-center{
+
+.item-info .x-center {
     padding-left: 0px !important;
     padding-right: 20px !important;
     box-sizing: border-box;
 }
-.buy-item button{
+
+.buy-item button {
     width: 100%;
 }
-.payment{
+
+.payment {
     position: fixed;
     top: 0;
     bottom: 0;
@@ -160,28 +210,38 @@
     right: 0;
     z-index: 999;
     background-color: rgba(0, 0, 0, 0.4);
-    display:none;
+    display: none;
 }
-.x-overlay{
+
+.x-overlay {
     display: flex;
     padding-top: 350px;
     height: 100%;
     text-align: center;
 
 }
-.payment-method div{
+
+.payment-method div {
     display: inline-block;
     width: 100%;
 }
-.payment-method a{
+
+.payment-method a {
     text-decoration: none;
     margin-right: 5% !important;
     margin-left: 5% !important;
 }
-.payment-method div img{
+
+.payment-method div img {
     max-height: 50px;
     margin-top: 20px !important;
 }
-#paySuccess{
-    display:none;
+
+#paySuccess {
+    display: none;
+}
+
+/* Halaman Petunjuk */
+.petunjuk p span {
+    font-weight: bold;
 }

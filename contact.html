@@ -78,7 +78,7 @@
 
                 <div class="col-lg-6 col-md-10">
                     <div style="padding-bottom:41px" class="card-panel">
-                        <form action="">
+                        <form action="javascript:sent()">
                             <h5>Silahkan isi form ini.</h5>
                             <div class="input-field">
                                 <input type="text" id="name" class="validate" required>
@@ -96,8 +96,20 @@
                                 <textarea name="message" class="materialize-textarea" required></textarea>
                                 <label for="phone">Pesan</label>
                             </div>
-                            <button type="submit" class="btn cyan darken-3">Kirim</button>
+                            <button id="sent" onclick="sent()" class="btn cyan darken-3">Kirim</button>
                         </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="sentMessage" class="payment">
+            <div class="x-overlay justify-content-center">
+                <div class="col-lg-6 col-md-8 col-sm-11">
+                    <div class="card justify-content-center">
+                        <div class="cyan pb-1">
+                            <h5 id="" class="text-white">Pesan Terkirim</h5>
+                            <a href="contact.html" class="btn white text-dark darken-3 mt-2 mb-4 cyan-hover text-white-hover">OK</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -139,6 +151,7 @@
         const sidenav = document.querySelectorAll('.sidenav');
         M.Sidenav.init(sidenav);
     </script>
+    <script src="js/my.js"></script>
 </body>
 
 </html>
