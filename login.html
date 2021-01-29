@@ -74,14 +74,14 @@
                         </div>
                         <div class="form-group pr-4">
                             <label class="form-control-label text-muted">Username</label>
-                            <input type="text" id="email" name="email" placeholder="Username" class=" form-control">
+                            <input type="text" id="email" name="email" placeholder="Username" class="form-control" required>
                         </div>
                         <div class="form-group  pr-4">
                             <label class="form-control-label text-muted">Password</label>
                             <input type="password" id="psw" name="psw" placeholder="Password" class="form-control">
                         </div>
                         <div class="row justify-content-center my-3 px-3">
-                            <button class="btn cyan text-white-hover mt-3" type="submit">Login</button>
+                            <button class="btn cyan text-white-hover mt-3" type="button" onclick="login()">Login</button>
                         </div>
                     </div>
                 </div>
@@ -121,6 +121,15 @@
     <script>
         const sidenav = document.querySelectorAll('.sidenav');
         M.Sidenav.init(sidenav);
+    </script>
+    <script type="text/javascript">
+        function login() {
+            if (document.getElementById("email").value == "arch" && document.getElementById("psw").value == "hmdadmin") {
+                window.location = "page1_.html";
+            } else {
+                alert("Username atau Password Salah");
+            }
+        }
     </script>
 </body>
 

@@ -316,7 +316,9 @@ span.bold {
     font-weight: 400;
 }
 
-
+.user-icon img {
+    max-width: 40px;
+}
 
 
 @media (min-width: 960px) {
