@@ -21,7 +21,7 @@
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/my.css">
-    <title>About | HMD</title>
+    <title>Login | HMD</title>
 </head>
 
 <body>
@@ -54,78 +54,48 @@
         <li><a href="about.html">Tentang Kami</a></li>
     </ul>
 
-    <div class="container-fluid">
-        <div class="row">
+    <section class="login">
+        <div class="container">
             <div class="row">
-                <div class="col text-center title-page font-odibee">
-                    <h3>Our Team</h3>
+                <div class="row">
+                    <div class="col text-center title-page font-odibee">
+                        <h3>Login</h3>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-lg-10 col-md-12 team">
+            <div class="col">
                 <div class="row justify-content-center">
-                    <div class="col-lg-4 col-md-10 mb-4">
-                        <div class="team-picture">
-                            <img src="img/team2.jpg" alt="">
+                    <div class="card">
+                        <div class="row justify-content-center">
+                            <img id="logo" src="img/logo.svg">
                         </div>
-                        <div class="team-profile">
-                            <h4>Deny Ardianto</h4>
-                            <p>Developer</p>
-                            <span>Lorem ipsum dolor, sit amet consectetur adipisicing.</span>
+                        <div class="row justify-content-center">
+                            <h6 class="mb-3">Please login to your account</h6>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-md-10 mb-4">
-                        <div class="team-picture">
-                            <img src="img/team3.jpg" alt="">
+                        <div class="form-group pr-4">
+                            <label class="form-control-label text-muted">Username</label>
+                            <input type="text" id="email" name="email" placeholder="Username" class=" form-control">
                         </div>
-                        <div class="team-profile">
-                            <h4>Maulana Junihardi</h4>
-                            <p>Developer</p>
-                            <span>Lorem ipsum dolor, sit amet consectetur adipisicing.</span>
+                        <div class="form-group  pr-4">
+                            <label class="form-control-label text-muted">Password</label>
+                            <input type="password" id="psw" name="psw" placeholder="Password" class="form-control">
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-md-10 mb-4">
-                        <div class="team-picture">
-                            <img src="img/team1.jpg" alt="">
-                        </div>
-                        <div class="team-profile">
-                            <h4>Hafez Almirza</h4>
-                            <p>Developer</p>
-                            <span>"Apapun yang anda lakukan jangan sampai tinggalkan shalat"</span>
+                        <div class="row justify-content-center my-3 px-3">
+                            <button class="btn cyan text-white-hover mt-3" type="submit">Login</button>
                         </div>
                     </div>
                 </div>
+                <!-- <div class="bottom text-center mt-3 mb-5">
+                        <p href="#" class="sm-text mx-auto mb-3">Don't have an account?<button class="btn btn-white ml-2">Create new</button></p>
+                    </div> -->
             </div>
         </div>
-        <div class="row about justify-content-center">
-            <div class="col-lg-10 col-md-12">
-                <div class="col text-center title-page font-odibee">
-                    <h3>About Us</h3>
-                </div>
-                <div class="aboutus">
-                    <p>
-                        <span class="p">HMD</span> merupakan sebuah grup fiksional yang dibentuk sebagai kelompok dalam pembuatan sebuah website,
-                        yang merupakan tugas sebagai Ujian Akhir Semester (UAS) mata kuliah Teknologi Web. Website ini dibuat menggunakan 2 framework CSS,
-                        yaitu <span class="bold">Bootstrap</span> dan <span class="bold">Materialize</span>
-                    </p>
-
-                    <p>
-                        <span class="p">HMD</span> adalah sebuah platform yang berjalan dalam kegiatan transaksi jual beli Akun PUBG Mobile.
-                        Keamanan dalam bertransaksi pada wbsite ini sangat terjamin, karen kami mengutamakan kepuasan pelanggan dalam bertransaksi.
-                        Semua akun yang dijual pada wbsite ini adalah akun-akun yang berasal dari banyak orang, kami mendistribusikan akun-akun dari berbagai player
-                        yang ingin menjual akun mereka karna alasan tertentu kepada player PUBG Mobile yang ingin memiliki akun yang berkualitas.
-                    </p>
-
-                </div>
-            </div>
-        </div>
-    </div>
+    </section>
 
     <footer>
         <div class="container-fluid pt-4">
             <div class="row justify-content-center">
-                <div class="col-11">
+                <div class="col-11 x-fixed-bottom">
                     <div class="copyright">
                         Copyright © 2021 HMD Store - All Rights Reserved. </div>
                     <div class="footer-payment-icons">

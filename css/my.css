@@ -250,3 +250,78 @@ iframe {
 .petunjuk p span {
     font-weight: bold;
 }
+
+/* Halaman About */
+.team {
+    text-align: center;
+
+}
+
+.team img {
+    max-width: 250px;
+    border-radius: 50%;
+    margin-top: 30px;
+}
+
+.team h4,
+.team p {
+    font-family: 'Concert One', cursive;
+}
+
+.team p {
+    font-size: 1.3em;
+}
+
+.team span {
+    font-family: 'Rancho', cursive;
+    font-size: 1.7em;
+    margin-top: 40px;
+}
+
+.about span.p {
+    font-size: 2em;
+    font-weight: bold;
+    margin-left: 30px;
+    margin-bottom: -10px;
+}
+
+span.bold {
+    font-weight: bold;
+}
+
+
+/* Halaman Login */
+
+.login .card {
+    padding: 60px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid #09b1b0 !important;
+    width: 70%;
+}
+
+.login .form-group {}
+
+.login input {
+    border: 2px solid #eeeeee !important;
+    padding: 0 10px !important;
+    height: 38px !important;
+    border-radius: 19px !important;
+}
+
+.login input:focus {
+    box-shadow: none !important;
+    border: 2px solid #09b1b0 !important;
+    outline-width: 0;
+    font-weight: 400;
+}
+
+
+
+
+@media (min-width: 960px) {
+    .x-fixed-bottom {
+        position: fixed;
+        bottom: 0;
+    }
+}
