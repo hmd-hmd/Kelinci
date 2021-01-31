@@ -226,6 +226,38 @@ iframe {
 
 }
 
+
+.choose-payment,
+.pay,
+#ovoDana,
+#visaMasterMaestro,
+#paypalGoogle {
+    display: none;
+}
+
+.pay {
+    position: relative;
+}
+
+.close-payment {
+    background-color: #666666;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 18px;
+    border: solid 2px #eeeeee;
+    box-sizing: border-box;
+    position: absolute;
+    top: -14px;
+    right: -14px;
+}
+
+.close-payment span {
+    font-size: 1.5em;
+    color: white;
+}
+
 .payment-method div {
     display: inline-block;
     width: 100%;
@@ -240,6 +272,28 @@ iframe {
 .payment-method div img {
     max-height: 50px;
     margin-top: 20px !important;
+}
+
+.pay .card {
+    border-radius: 10px;
+}
+
+.pay-data img {
+    max-height: 100px;
+}
+
+.pay-data input {
+    border: 2px solid #eeeeee !important;
+    padding: 0 10px !important;
+    height: 38px !important;
+    border-radius: 19px !important;
+}
+
+.pay-data input:focus {
+    box-shadow: none !important;
+    border: 2px solid #09b1b0 !important;
+    outline-width: 0;
+    font-weight: 400;
 }
 
 #paySuccess {
